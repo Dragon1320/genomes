@@ -1,0 +1,24 @@
+{
+  "editor.formatOnSave": true,
+  "search.exclude": {
+    "**/static": true,
+    "**/build": true,
+    "**/node_modules": true,
+    "**/.svelte-kit": true
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit"
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[svelte]": {
+    "editor.defaultFormatter": "svelte.svelte-vscode"
+  },
+  "css.lint.unknownAtRules": "ignore",
+  "editor.inlayHints.enabled": "on",
+  "typescript.inlayHints.parameterNames.enabled": "all",
+  "typescript.inlayHints.variableTypes.enabled": true,
+  "typescript.inlayHints.parameterTypes.enabled": true,
+  "typescript.inlayHints.propertyDeclarationTypes.enabled": true,
+  "typescript.inlayHints.functionLikeReturnTypes.enabled": true,
+  "typescript.tsdk": "node_modules/typescript/lib"
+}

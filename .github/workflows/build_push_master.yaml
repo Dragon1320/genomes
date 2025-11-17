@@ -1,0 +1,17 @@
+name: Build push to master
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  check:
+    name: Check
+    uses: ./.github/workflows/_check.yaml
+    secrets: inherit
+  build:
+    name: Build
+    needs: check
+    uses: ./.github/workflows/_docker.yaml
+    secrets: inherit
