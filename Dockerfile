@@ -11,6 +11,7 @@ FROM node:24
 WORKDIR /app
 RUN corepack enable
 COPY --from=builder /app/build build/
+COPY --from=builder /app/scripts scripts/
 COPY --from=builder /app/node_modules node_modules/
 COPY package.json .
 EXPOSE 3000
